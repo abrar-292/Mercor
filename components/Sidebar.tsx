@@ -70,7 +70,7 @@ const Sidebar = () => {
               Thoughts Time
             </p>
             <p className="font-light text-xs text-gray-400 mt-5">
-              We don’t have any notice for you, till then you can share your
+              We don't have any notice for you, till then you can share your
               thoughts with your peers.
             </p>
             <button className="mt-5 btn bg-white py-2 px-4 rounded-md">

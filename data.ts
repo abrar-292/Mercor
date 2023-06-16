@@ -68,7 +68,7 @@ export const myProjects: Project[] = [
   },
   {
     name: 'Website Redesign',
-    color: 'yellow',
+    color: 'orange',
     active: false
   },
   {

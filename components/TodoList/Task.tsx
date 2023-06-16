@@ -35,7 +35,19 @@ export const Task = ({ task, tasks, setTasks }) => {
       className={`relative bg-white p-4 rounded-2xl cursor-pointer text`}
     >
       <span
-        className={`text-${color}-400 bg-${color}-100 p-1 rounded-md text-xs`}
+        className={`${
+          color === "purple"
+            ? `text-purple-400`
+            : color === "orange"
+            ? `text-orange-400`
+            : "text-green-400"
+        } ${
+          color === "purple"
+            ? `bg-purple-100`
+            : color === "orange"
+            ? `bg-orange-100`
+            : "bg-green-100"
+        } p-1 rounded-md text-xs`}
       >
         {task.priority}
       </span>

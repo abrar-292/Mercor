@@ -27,7 +27,17 @@ export const MyProjects = ({ isOpen }: { isOpen: boolean }) => {
           <div
             className={`h-2 w-2 rounded-full ${
               !isOpen ? "mx-auto lg:mr-2 lg:ml-0" : "mx-auto"
-            } bg-${project.color}-400`}
+            } 
+            ${
+              project.color === "green"
+                ? `bg-green-400`
+                : project.color === "orange"
+                ? `bg-orange-400`
+                : project.color === "indigo"
+                ? `bg-indigo-400`
+                : "bg-blue-400"
+            }
+            bg-${project.color}-400`}
           />
           {!isOpen && (
             <span className="hidden lg:inline text-sm">{project.name}</span>
