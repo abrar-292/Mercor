@@ -19,18 +19,18 @@ export const Section = ({
   }));
 
   let text = "To Do";
-  let bg = "purple-500";
+  let bg = "purple";
   let tasksToMap = todos;
 
   if (status === "inprogress") {
     text = "On Progress";
-    bg = "yellow-500";
+    bg = "orange";
     tasksToMap = inProgress;
   }
 
   if (status === "closed") {
     text = "Done";
-    bg = "green-500";
+    bg = "green";
     tasksToMap = closed;
   }
 

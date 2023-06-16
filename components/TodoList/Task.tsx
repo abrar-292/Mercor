@@ -6,10 +6,10 @@ import Image from "next/image";
 import { useDrag } from "react-dnd";
 
 export const Task = ({ task, tasks, setTasks }) => {
-  let color = "yellow";
+  let color = "orange";
   switch (task.priority) {
     case "Low":
-      color = "yellow";
+      color = "orange";
       break;
     case "High":
       color = "red";
@@ -18,7 +18,7 @@ export const Task = ({ task, tasks, setTasks }) => {
       color = "green";
       break;
     default:
-      color = "yellow";
+      color = "orange";
   }
 
   const [{ isDragging }, drag]: any = useDrag(() => ({
